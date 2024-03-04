@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+body{
+    position: relative;
+}
+/* body,html{
+    width: 100%;
+    height: 100%;
+} */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.nav-list {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: -100;
+    transition: all 0.6s ease-in-out;
+}
+
+#listItem {
+    z-index: -100;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 33%;
+}
+
+.rightNav {
+    width: 50%;
+    text-align: right;
+    padding: 0 23px;
+    transition: all 0.6s ease-in-out;
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.nav-list li a:hover {
+    opacity: 0.65;
+}
+
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid #fde684;
+    border-radius: 9px;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url(./assets/images/lights-india-west-bengal-kolkata-wallpaper-preview.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstSection {
+    height: 128vh;
+}
+
+.box-main {
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    color: white;
+    max-width: 60%;
+    margin: auto;
+    height: 70%;
+    z-index: 10000;
+}
+
+.firstHalf {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 25px;
+    gap: 1rem;
+}
+
+.firstHalf p,
+.firstHalf h3,
+.firstHalf button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.secondHalf {
+    width: 40%;
+}
+
+.secondHalf img {
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 30px;
+    display: block;
+    margin: auto;
+}
+
+.text-big {
+    font-size: 41px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    opacity: 0.7;
+}
+
+.text-small {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0.6;
+    line-height: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 2.5%;
+    align-items: center;
+}
+
+.btn {
+    padding: 8px 20px;
+    margin: 7px 0;
+    border: 1.5px solid #3741bc;
+    border-radius: 8px;
+    cursor: pointer;
+    background: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+.btn:hover{
+    color: #3741bc;
+}
+
+.section {
+    /* height: 500px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    max-width: 80%;
+    margin: auto;
+}
+
+.thumbnail {
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
+
+.thumbnail img {
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease-in-out;
+    border-radius: 15px;
+}
+
+.secondHalf img {
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+    border-radius: 15px;
+}
+
+.thumbnail img:hover {
+    transform: scale(1.1);
+}
+
+.secondHalf img:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px 5px rgba(255, 255, 255, 0.281);
+}
+
+.left {
+    flex-direction: row-reverse;
+}
+
+.paras {
+    padding: 0 65px;
+}
+
+.sectionTag {
+    margin-bottom: 16px;
+}
+
+.contact {
+    background-color: #f6f5f4;
+    height: 86vh;
+    /* padding-bottom: 20px; */
+}
+
+.text-center {
+    text-align: center;
+    font-family: serif;
+    padding-top: 30px;
+    font-size: 35px;
+}
+
+.form {
+    max-width: 500px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    margin: 14px 0;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+}
+
+.submit {
+    color: black;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.7;
+    align-self: center;
+    transition: transform 0.2s ease-in-out;
+}
+.submit:hover{
+    transform: scale(1.2);
+    color: #0015fc;
+}
+.text-footer {
+    text-align: center;
+    font-family: serif;
+    padding: 30px;
+    color: white;
+}
+
+.burger {
+    opacity: 0;
+    z-index: 100000;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;transition: all 0.6s ease-in-out;
+}
+.logo1{
+    width:140px;
+    opacity: 0;
+    z-index: 100000;
+    position: absolute;
+    cursor: pointer;
+    left: 5%;
+    top: 18px;transition: all 0.6s ease-in-out;
+}
+.logo1 img{
+    width: 50%;
+    height: 100%;
+}
+.cancel{
+    opacity: 0;
+    z-index: 10000;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;transition: all 0.6s ease-in-out;
+}
+.cancel svg{
+    width: 40px;
+    height: 2rem;
+    color: white;
+
+}
+.line {
+    width: 33px;
+    background-color: #fff;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+@media only screen and (max-width: 1140px) {
+    .logo img {
+        width: 150%;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 1rem;
+        transition: all 1.3s ease-in-out;
+    }
+
+    #listItem {
+        flex-direction: column;
+        gap: 1rem;
+        /* z-index: -1000; */
+    }
+    .navbar {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        gap: 1rem;
+        height: 310px;
+        transition: all 0.6s ease-in-out;
+        z-index: 10;
+    }
+
+    .rightNav {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        transition: all 1.3s ease-in-out;
+    }
+
+    .btn-sm {
+        width: 40%;
+        margin: auto;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    .burger {
+        opacity: 1;
+        position: fixed;
+        transition: all 0.6s ease-in-out;
+    }
+    .logo1{
+        opacity: 1;
+        position: fixed;
+        transition: all 0.6s ease-in-out;
+    }
+    .cancel{
+        opacity: 0;
+        position: fixed;
+        transition: all 0.6s ease-in-out;
+    }
+    .h-nav-resp {
+        height: 50px;
+        transition: all 1.3s ease-in-out;
+    }
+
+    .v-class-resp {
+        opacity: 0;
+        height: 100%;
+        transition: all 0.8s ease-in-out;
+    }
+    .burger-none{
+        opacity: 0;transition: all 0.6s ease-in-out;
+    }
+    .logo-none{
+        opacity: 0;transition: all 0.6s ease-in-out;
+    }
+    .cancel-none{
+        opacity: 1;
+        transition: all 0.6s ease-in-out;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+        gap: 7rem;
+        z-index: 10000;
+    }
+    .firstHalf p{
+        line-height: 35px;
+    }
+    .section {
+        /* height: 100vh; */
+        padding: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 80%;
+        margin: auto;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .thumbnail img {
+        width: 80%;
+        margin: 30px;
+    }
+}
